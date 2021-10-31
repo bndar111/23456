@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		960E1A2D272E7265009D8D0A /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
-		96E66861272AA89D0052D7A8 /* 23456.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 23456.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E66861272AA89D0052D7A8 /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E66864272AA89D0052D7A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E66866272AA89D0052D7A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		96E66868272AA89D0052D7A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		96E66862272AA89D0052D7A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96E66861272AA89D0052D7A8 /* 23456.app */,
+				96E66861272AA89D0052D7A8 /* Project2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96E66860272AA89D0052D7A8 /* 23456 */ = {
+		96E66860272AA89D0052D7A8 /* Project2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96E66875272AA89E0052D7A8 /* Build configuration list for PBXNativeTarget "23456" */;
+			buildConfigurationList = 96E66875272AA89E0052D7A8 /* Build configuration list for PBXNativeTarget "Project2" */;
 			buildPhases = (
 				96E6685D272AA89D0052D7A8 /* Sources */,
 				96E6685E272AA89D0052D7A8 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = 23456;
+			name = Project2;
 			productName = 23456;
-			productReference = 96E66861272AA89D0052D7A8 /* 23456.app */;
+			productReference = 96E66861272AA89D0052D7A8 /* Project2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 96E6685C272AA89D0052D7A8 /* Build configuration list for PBXProject "23456" */;
+			buildConfigurationList = 96E6685C272AA89D0052D7A8 /* Build configuration list for PBXProject "Project2" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96E66860272AA89D0052D7A8 /* 23456 */,
+				96E66860272AA89D0052D7A8 /* Project2 */,
 			);
 		};
 /* End PBXProject section */
@@ -299,6 +299,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 23456/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Project2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,6 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 23456/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Project2;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -347,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		96E6685C272AA89D0052D7A8 /* Build configuration list for PBXProject "23456" */ = {
+		96E6685C272AA89D0052D7A8 /* Build configuration list for PBXProject "Project2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96E66873272AA89E0052D7A8 /* Debug */,
@@ -356,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96E66875272AA89E0052D7A8 /* Build configuration list for PBXNativeTarget "23456" */ = {
+		96E66875272AA89E0052D7A8 /* Build configuration list for PBXNativeTarget "Project2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96E66876272AA89E0052D7A8 /* Debug */,

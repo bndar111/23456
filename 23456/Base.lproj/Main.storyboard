@@ -62,7 +62,7 @@
         <!--View Controller1-->
         <scene sceneID="duV-AX-6Wp">
             <objects>
-                <viewController id="8eA-1l-ucY" customClass="ViewController1" customModule="_3456" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8eA-1l-ucY" customClass="ViewController1" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SRg-8N-29q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
