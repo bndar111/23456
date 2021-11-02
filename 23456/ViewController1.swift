@@ -1,4 +1,5 @@
 import UIKit
+
 class ViewController1: UIViewController,UITableViewDelegate,UITableViewDataSource , UpdateDelegate {
 
     @IBOutlet weak var TabelName: UITextField!
@@ -6,7 +7,6 @@ class ViewController1: UIViewController,UITableViewDelegate,UITableViewDataSourc
     
     var Namber:Int = 0
     func updateName(name: String) {
-        print(name)
         arrNames[Namber] = name
         TableView.reloadData()
     }
@@ -49,7 +49,6 @@ class ViewController1: UIViewController,UITableViewDelegate,UITableViewDataSourc
         let deletAcAction = UIContextualAction(style: .destructive, title: "حذف") {( action, view, completionHandler) in
             self.arrNames.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
-
         }
 
         deletAcAction.image = UIImage(systemName: "trash")
@@ -66,7 +65,6 @@ class ViewController1: UIViewController,UITableViewDelegate,UITableViewDataSourc
         newVC.name = arrNames[indexPath.row]
         navigationController?.pushViewController(newVC, animated: true)
     }
-
 
 }
 

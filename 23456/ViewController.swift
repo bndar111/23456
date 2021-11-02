@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  23456
-//
-//  Created by بندر عبيد ثاري الرشيدي on 22/03/1443 AH.
-//
-
 import UIKit
 
 protocol UpdateDelegate {
@@ -13,7 +6,7 @@ protocol UpdateDelegate {
 
 class ViewController: UIViewController {
     
-    var name: String = "" 
+    var name: String = ""
     var delegate : UpdateDelegate!
     
     @IBOutlet weak var ebdete1: UITextField!
@@ -24,10 +17,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         ebdete1.text = name
     }
-
-
 }
 

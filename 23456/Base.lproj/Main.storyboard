@@ -16,16 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZV6vDpQ1up-Annajah" translatesAutoresizingMaskIntoConstraints="NO" id="y9Z-v3-kQh">
-                                <rect key="frame" x="20" y="219" width="374" height="458"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-1" translatesAutoresizingMaskIntoConstraints="NO" id="y9Z-v3-kQh">
+                                <rect key="frame" x="20" y="94" width="374" height="669"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cdl-aD-aRR"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
+                            <constraint firstItem="cdl-aD-aRR" firstAttribute="bottom" secondItem="y9Z-v3-kQh" secondAttribute="bottom" constant="50" id="C8r-fu-woX"/>
                             <constraint firstItem="cdl-aD-aRR" firstAttribute="trailing" secondItem="y9Z-v3-kQh" secondAttribute="trailing" constant="20" id="GI0-MT-aVZ"/>
                             <constraint firstItem="y9Z-v3-kQh" firstAttribute="leading" secondItem="cdl-aD-aRR" secondAttribute="leading" constant="20" id="WoA-c2-uFC"/>
-                            <constraint firstItem="cdl-aD-aRR" firstAttribute="bottom" secondItem="y9Z-v3-kQh" secondAttribute="bottom" constant="136" id="qc2-Mr-AWA"/>
+                            <constraint firstItem="y9Z-v3-kQh" firstAttribute="top" secondItem="cdl-aD-aRR" secondAttribute="top" constant="50" id="eia-BP-htL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="5Me-R5-UWv"/>
@@ -223,8 +224,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ZV6vDpQ1up-Annajah" width="875" height="458"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="images-1" width="301" height="167"/>
         <image name="menu-small" width="22" height="22"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
