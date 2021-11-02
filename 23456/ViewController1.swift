@@ -1,15 +1,19 @@
 import UIKit
-class ViewController1: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController1: UIViewController,UITableViewDelegate,UITableViewDataSource , UpdateDelegate {
 
     @IBOutlet weak var TabelName: UITextField!
     @IBOutlet weak var TableView: UITableView!
     
-    var arrNames = ["Go To Work","Go To Mosq","Go To Shopping","Go To Gym","Do The Homework","Go To Sleep"]
+    var Namber:Int = 0
+    func updateName(name: String) {
+        print(name)
+        arrNames[Namber] = name
+        TableView.reloadData()
+    }
+    var arrNames = ["Go To Work","Go To Mosq","Go To Shopping","Go To Sleep"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let btnAdd1 = UserDefaults.standard.string(forKey: "btnAdd")
-//        TabelName.text = btnAdd1
         TableView.delegate = self
         TableView.dataSource = self
     }
@@ -18,13 +22,13 @@ class ViewController1: UIViewController,UITableViewDelegate,UITableViewDataSourc
         
     }
     @IBAction func btnAdd(_ sender: Any) {
-        // الاضافة
-//        UserDefaults.standard.set(btnAdd, forKey: "btnAdd")
         if TabelName.text == ""{return}
         if let text = TabelName.text {
             arrNames.append(text)
             let indaPath = IndexPath(row: arrNames.count - 1, section: 0)
+            TableView.beginUpdates()
             TableView.insertRows(at: [indaPath], with: .automatic)
+            TableView.endUpdates()
             TabelName.text = ""
         }
     }
@@ -45,19 +49,24 @@ class ViewController1: UIViewController,UITableViewDelegate,UITableViewDataSourc
         let deletAcAction = UIContextualAction(style: .destructive, title: "حذف") {( action, view, completionHandler) in
             self.arrNames.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
-//            tableView.endUpdates()
-//            completionHandler(true)
+
         }
-//        favoriteAction.image = UIImage(systemName: "pencil")
+
         deletAcAction.image = UIImage(systemName: "trash")
         return UISwipeActionsConfiguration(actions: [deletAcAction])
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let newVC =
+        (storyboard?.instantiateViewController(withIdentifier: "Ubdete"))as! ViewController
+        newVC.delegate = self
+        Namber = indexPath.row
+        newVC.name = arrNames[indexPath.row]
+        navigationController?.pushViewController(newVC, animated: true)
     }
-    
 
 
-
+}
 

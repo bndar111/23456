@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "headphonesmall.png",
+      "filename" : "pexels-photo-908301.jpeg.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "headphonesmall@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "headphonesmall@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
