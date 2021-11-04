@@ -1,8 +1,8 @@
-Program : To Do Task
+Program : To Do List
 
 Overview : Talking About Daily Tasks
 
-1- Create A New To Do Task
+1- Create A New Task
 
 2- remove and Update . 
 
