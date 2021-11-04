@@ -6,9 +6,9 @@ Overview : Talking About Daily Tasks
 
 2- remove To Do Task . 
 
-4- Update One To Do Task . 
+3- Update One To Do Task . 
 
-5- Swap One To Do Task 
+4- Swap One To Do Task 
 
 
 Usage : In My Daily Tasks
